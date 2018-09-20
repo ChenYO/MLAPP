@@ -12,6 +12,7 @@
 		76C22FF421534C790018F78B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76C22FF221534C790018F78B /* Main.storyboard */; };
 		76C22FF621534C7D0018F78B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76C22FF521534C7D0018F78B /* Assets.xcassets */; };
 		76C22FF921534C7D0018F78B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76C22FF721534C7D0018F78B /* LaunchScreen.storyboard */; };
+		76C230052153627C0018F78B /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 76C230042153627C0018F78B /* Inceptionv3.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		76C22FF521534C7D0018F78B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76C22FF821534C7D0018F78B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76C22FFA21534C7D0018F78B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76C230042153627C0018F78B /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Inceptionv3.mlmodel; path = ../../../Downloads/Inceptionv3.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 		76C22FE221534C790018F78B = {
 			isa = PBXGroup;
 			children = (
+				76C230042153627C0018F78B /* Inceptionv3.mlmodel */,
 				76C22FED21534C790018F78B /* MLAPP */,
 				76C22FEC21534C790018F78B /* Products */,
 			);
@@ -55,13 +58,29 @@
 			isa = PBXGroup;
 			children = (
 				76C22FEE21534C790018F78B /* AppDelegate.swift */,
-				76C22FF021534C790018F78B /* ViewController.swift */,
-				76C22FF221534C790018F78B /* Main.storyboard */,
+				76C2300121534CA60018F78B /* Controller */,
+				76C2300021534C960018F78B /* StoryBoard */,
 				76C22FF521534C7D0018F78B /* Assets.xcassets */,
-				76C22FF721534C7D0018F78B /* LaunchScreen.storyboard */,
 				76C22FFA21534C7D0018F78B /* Info.plist */,
 			);
 			path = MLAPP;
+			sourceTree = "<group>";
+		};
+		76C2300021534C960018F78B /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				76C22FF221534C790018F78B /* Main.storyboard */,
+				76C22FF721534C7D0018F78B /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		76C2300121534CA60018F78B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				76C22FF021534C790018F78B /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76C22FF121534C790018F78B /* ViewController.swift in Sources */,
+				76C230052153627C0018F78B /* Inceptionv3.mlmodel in Sources */,
 				76C22FEF21534C790018F78B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
